@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Jewett's Cheese House Aged Cheddar Cheese and Specialty Cheeses Earlville, New York</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/jewetts.css">
+    <body>
+        <div class="cheeseHouse">
+    <h1>Jewett's Cheese House</h1>
+    <h2>A Family Business Since 1970, #(hiToOzzi)</h2>
+        
+    <div class="pix">
+        <img src="/img/165684026_3343369649098586_4073308872702510618_n.jpg"/>
+        <img src="/img/168961818_3366636543438563_1878693262189303436_n.jpg"/>
+        <img src="/img/173465092_3409482949153922_4943716554329536957_n.jpg"/>
+        <img src="/img/179479071_3441705279265022_1761721291995860027_n.jpg"/>
+        <img src="/img/188331694_3500873080014908_4279456913603763969_n.jpg"/>
+        <img src="/img/202018703_3579090332193182_8433812767943468361_n.jpg"/>
+        <img src="/img/205415364_3602823489819866_3528163455742640662_n.jpg"/>
+        <img src="/img/240732319_360772055524369_5165763861218974596_n.jpg"/>
+        <img src="/img/278106686_512018467066393_7681168566514546755_n.jpg"/>
+    </div>
+        
+    <img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
+</div>
+        
+        <script src="/js/jquery-3.6.0.min.js"></script>
+        <script src="/js/jewetts.js"></script>
+    </body>
+</html>
