@@ -1,13 +1,11 @@
 import Vapor
 import Leaf
 
-// configures your application
 public func configure(_ app: Application) throws {
-    // uncomment to serve files from /Public folder
+    app.http.server.configuration.port = 3099
+
     app.middleware.use(FileMiddleware(publicDirectory: app.directory.publicDirectory))
     app.views.use(.leaf)
 
-
-    // register routes
     try routes(app)
 }
