@@ -1,0 +1,54 @@
+/*
+orange = #FFA500
+deeppink = #FF1493
+yellowgreen = #9ACD32
+goldenrod = #DAA520
+skyblue = #87CEEB
+
+chartreuse = #7FFF00
+magenta = #FF00FF
+dodgerblue = #1E90FF
+gold = #FFD700
+white = doy
+*/
+
+html, body {
+	height: 100%;
+}
+
+body {
+	background-color: cornsilk;
+}
+
+body * {
+	font-family: 'Pangolin';
+}
+
+.pix {
+	display: grid;
+}
+
+.pix img {
+	width: 190px;
+}
+
+.pix img:nth-of-type(1) {
+	border: 6px solid orange;
+	align-self: stretch;
+}
+
+.cheeseHouse {
+	background: lemonchiffon;
+	border-left: 1px solid deeppink;
+	border-right: 1px solid deeppink;
+	margin: 0 auto;
+	width: 1024px;
+	position: relative;
+	height: 100%;
+}
+
+.mistrMouse {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
