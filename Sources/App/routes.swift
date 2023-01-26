@@ -1,15 +1,23 @@
 import Vapor
 
+struct Pages {
+    let index = "pages/index"
+    let spudandal = "pages/spudandal"
+    let yevvi = "pages/yevvi"
+}
+
 func routes(_ app: Application) throws {
-    app.get { req async throws -> View in
-        return try await req.view.render("ozzi", ["hiToOzzi": "Hi Ozz!"])
-    }
+    let pages = Pages()
     
-    app.get("ozzi") { req async throws -> View in
-        return try await req.view.render("ozzi", ["hiToOzzi": "Hi Ozz!"])
+    app.get { req async throws -> View in
+        return try await req.view.render(pages.index)
     }
 
-    app.get("giggi") { req async -> String in
-        "Hello, Giggi!"
+    app.get("yevvi") { req async throws -> View in
+        return try await req.view.render(pages.yevvi)
+    }
+
+    app.get("spudandal") { req async throws -> View in
+        return try await req.view.render(pages.spudandal)
     }
 }

@@ -1,0 +1,9 @@
+
+#extend("layout"):
+    #export("body"):
+<div class="grass">
+    <img src="/img/kitties/spudandalbert.jpg"/>
+    <img src="/img/kitties/spudnaldates.jpg"/>
+</div>
+    #endexport
+#endextend

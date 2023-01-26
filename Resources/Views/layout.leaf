@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/jewetts.css">
     <body>
-        #extend("giggi")
+        #import("body")
 
         <script src="/js/jquery-3.6.3.min.js"></script>
         <script src="/js/jewetts.js"></script>

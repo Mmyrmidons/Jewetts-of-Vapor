@@ -1,0 +1,5 @@
+#extend("layout"):
+    #export("body"):
+        <div class="thePoupster"></div>
+    #endexport
+#endextend

@@ -52,3 +52,21 @@ body * {
 	left: 0;
 	bottom: 0;
 }
+
+.thePoupster {
+    width: 100%;
+    height: 100%;
+    background: skyblue url("/img/kitties/birdback.jpg");
+}
+
+.grass {
+    width: 100%;
+    height: 100%;
+    background: chartreuse url("/img/kitties/spudalback.jpg");
+    padding: 36px;
+}
+
+.grass img {
+    display: block;
+    margin: 24px auto;
+}
