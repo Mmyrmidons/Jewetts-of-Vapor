@@ -2,7 +2,7 @@
 #extend("layout"):
     #export("body"):
 <div class="grass">
-    <img src="/img/kitties/spudandalbert.jpg"/>
+    <a href="/"><img src="/img/kitties/spudandalbert.jpg"/></a>
     <img src="/img/kitties/spudnaldates.jpg"/>
 </div>
     #endexport
