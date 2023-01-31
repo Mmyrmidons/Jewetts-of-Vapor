@@ -1,5 +1,5 @@
 #extend("layout"):
     #export("body"):
-        <a href="/" class="thePoupster"></a>
+        <div class="thePoupster"></div>
     #endexport
 #endextend
