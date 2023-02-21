@@ -1,21 +1,11 @@
 import Vapor
 import Leaf
 
-struct ImageListTag: LeafTag {
+struct CatGreetingTag: LeafTag {
 	func render(_ ctx: LeafContext) throws -> LeafData {
-		if let app = ctx.application {
-			let fileURL = URL(fileURLWithPath: app.directory.publicDirectory).appendingPathComponent("img/various", isDirectory: true)
-
-			do {
-				let fileList = try FileManager.default.contentsOfDirectory(at: fileURL, includingPropertiesForKeys: nil)
-				
-				print(fileList)
-				
+		let salutation = ["Hi ", "Hail ", "Good even ", "How do you ", "How now ", "What cheer ", "Well met "].shuffled().first
+		let cat = ["Birdi Jr", "Miss Moon", "Anni-mu", "Ozz", "Giggers"].shuffled().first
 		
-
-			} catch {}
-		}
-
-		return LeafData.array(["Hi Mistr Ozz", "Hi Anni-kins"])
+		return LeafData.string(salutation! + cat!)
 	}
 }
