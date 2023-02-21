@@ -2,7 +2,8 @@
 <html lang="en">
     <title>Jewett's Cheese House Aged Cheddar Cheese and Specialty Cheeses Earlville, New York</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/reset.css">
+    <meta name="color-scheme" content="light">
+		<link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/jewetts.css">
     <body>
         #import("body")
