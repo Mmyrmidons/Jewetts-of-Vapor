@@ -1,31 +1,10 @@
 #extend("layout"):
-    #export("body"):
-
-		<a href="/yevvi">Hail Yevvi!</a>
-		<a href="/spudandal">How now, Spud and Al?</a>
-			
-
-		#import("facebook")
+	#export("fb"):
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=1135040363843787&autoLogAppEvents=1" nonce="7WykLERy"></script>
 
 <div class="fb-page" data-href="https://www.facebook.com/duncan.davidson.902" data-tabs="timeline" data-width="377" data-height="754" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
 
-
-		<div class="cheeseHouse">
-			<h1>Jewett's Cheese House</h1>
-			<h2>A Family Business Since 1970</h2>
-        
-			<div class="pix">
-				<h3>#catGreeting()</h3>
-
-				#for(src in pix):
-					<img src="#(src)"/>
-				#endfor
-			</div>
-        
-			<img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
-		</div>
-    #endexport
+	#endexport
 #endextend

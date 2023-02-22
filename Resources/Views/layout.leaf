@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/jewetts.css">
     <body>
+		
+		#import("fb")
+
         #import("body")
 
         <script src="/js/jquery-3.6.3.min.js"></script>
