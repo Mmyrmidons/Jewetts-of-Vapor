@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <title>Jewett's Cheese House Aged Cheddar Cheese and Specialty Cheeses Earlville, New York</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light">
+	#extend("partials/meta")
 	<link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/jewetts.css">
     <body>
 		
-		#import("fb")
 
         #import("body")
 
@@ -15,3 +13,4 @@
         <script src="/js/jewetts.js"></script>
     </body>
 </html>
+
