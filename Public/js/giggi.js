@@ -1,5 +1,5 @@
-let giggi = function() {
-	alert("Hi Ozzi Bro!")
+let giggi = function(FB) {
+	alert("Hi Ozzi Bro: ", FB)
 	
 	
 	

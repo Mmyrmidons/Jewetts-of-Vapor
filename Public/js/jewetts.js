@@ -3,16 +3,12 @@ let jewetts = (function() {
 
     let onReady = function() {
 		initEvents()
-		facebook()
-		
-		$.getScript("https://www.jewettscheese.com/js/giggi.js", function() {
-			giggi()
-		})
 	}
 	
-	let facebook = function() {
-		
-		
+	let facebook = function(FB) {
+		$.getScript("https://www.jewettscheese.com/js/giggi.js", function() {
+			giggi(FB)
+		})
 	}
 	
 	let initEvents = function() {}
