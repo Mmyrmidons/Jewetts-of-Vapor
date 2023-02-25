@@ -14,7 +14,8 @@ let jewetts = (function() {
 	let initEvents = function() {}
 	
     return {
-		onReady: onReady
+		onReady: onReady,
+		facebook: facebook
     }
 })()
 
