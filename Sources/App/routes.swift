@@ -1,5 +1,10 @@
 import Vapor
 
+struct YourAgonizerPlease {
+	let id = "102045542829255"
+}
+
+
 enum CheeseError: Error {
 	case ImagePathError(Error)
 }

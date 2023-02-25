@@ -7,12 +7,6 @@
 
 		#extend("partials/facebook")
 
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0&appId=1135040363843787&autoLogAppEvents=1" nonce="7WykLERy"></script>
-
-<div class="fb-page" data-href="https://www.facebook.com/duncan.davidson.902" data-tabs="timeline" data-width="377" data-height="754" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"></div>
-
-
 		<div class="cheeseHouse">
 			<h1>Jewett's Cheese House</h1>
 			<h2>A Family Business Since 1970</h2>
