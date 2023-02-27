@@ -9,7 +9,10 @@
 					version: 'v16.0'
 				})
 				
+				
+$(document).ready({
 				jewetts.facebook(FB)
+})
 			}
 		</script>
 		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
