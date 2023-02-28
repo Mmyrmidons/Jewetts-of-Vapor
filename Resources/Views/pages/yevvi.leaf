@@ -9,9 +9,8 @@
 					version: 'v16.0'
 				})
 				
-				
 				$(document).ready(function() {
-					jewetts.facebook(FB)
+					jewetts.initFacebook(FB)
 				})
 			}
 		</script>
