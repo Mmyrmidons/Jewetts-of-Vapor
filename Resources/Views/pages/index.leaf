@@ -4,8 +4,7 @@
 		<a href="/yevvi">Hail Yevvi!</a>
 		<a href="/spudandal">How now, Spud and Al?</a>
 			
-
-		#extend("partials/facebook")
+<!--		#extend("partials/facebook")-->
 
 		<div class="cheeseHouse">
 			<h1>Jewett's Cheese House</h1>

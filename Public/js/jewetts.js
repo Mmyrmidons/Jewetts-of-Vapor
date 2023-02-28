@@ -5,7 +5,7 @@ let jewetts = (function() {
 		initEvents()
 	}
 	
-	let facebook = function(FB) {
+	let initFacebook = function(FB) {
 		$.getScript("https://www.jewettscheese.com/js/giggi.js", function() {
 			giggi(FB)
 		})
@@ -15,7 +15,7 @@ let jewetts = (function() {
 	
     return {
 		onReady: onReady,
-		facebook: facebook
+		initFacebook: initFacebook
     }
 })()
 
