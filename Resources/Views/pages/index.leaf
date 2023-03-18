@@ -1,24 +1,19 @@
 #extend("layout"):
     #export("body"):
-
-		<a href="/yevvi">Hail Yevvi!</a>
-		<a href="/spudandal">How now, Spud and Al?</a>
-			
-<!--		#extend("partials/facebook")-->
-
 		<div class="cheeseHouse">
-			<h1>Jewett's Cheese House</h1>
-			<h2>A Family Business Since 1970</h2>
+<!--			<h1>Jewett's Cheese House</h1>-->
+<!--			<h2>A Family Business Since 1970</h2>-->
         
-			<div class="pix">
-				<h3>#catGreeting()</h3>
-
-				#for(src in pix):
-					<img src="#(src)"/>
-				#endfor
-			</div>
+<!--			<div class="pix">-->
+<!--				<h3>#catGreeting()</h3>-->
+<!---->
+<!--				#for(src in pix):-->
+<!--					<img src="#(src)"/>-->
+<!--				#endfor-->
+<!--			</div>-->
         
-			<img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
+			#extend("partials/facebookFeed")
 		</div>
+		<img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
     #endexport
 #endextend

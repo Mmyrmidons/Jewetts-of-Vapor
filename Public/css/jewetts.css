@@ -17,11 +17,11 @@ html, body {
 }
 
 body {
-	background-color: cornsilk;
+	background-color: burlywood;
 }
 
 body * {
-	font-family: 'Pangolin';
+/*	font-family: 'Pangolin';*/
 }
 
 .pix {
@@ -39,8 +39,8 @@ body * {
 
 .cheeseHouse {
 	background: lemonchiffon;
-	border-left: 1px solid deeppink;
-	border-right: 1px solid deeppink;
+	border-left: 3px solid black;
+	border-right: 3px solid black;
 	margin: 0 auto;
 	width: 1024px;
 	position: relative;
@@ -69,4 +69,65 @@ body * {
 .grass img {
     display: block;
     margin: 24px auto;
+}
+
+.facebookFeed {
+	float: right;
+	width: 500px;
+	background-color: burlywood;
+	font-family: sans-serif;
+}
+
+.facebookFeed .header {
+	display: flex;
+	gap: 12px;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+}
+
+.facebookFeed .header .h1 {
+	font-size: 15px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+
+.facebookFeed .header .ikon {
+	flex-basis: auto;
+}
+
+.facebookFeed .header .ikon img {
+	display: block;
+}
+
+.facebookFeed .header .headerInfo {
+	flex-basis: 370px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 3px;
+}
+
+.facebookFeed .header .headerDetails {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 6px;
+	font-size: 13px;
+}
+
+.facebookFeed .body .options {
+	color: black;
+	text-decoration: none;
+}
+
+.facebookFeed .body .message {
+	padding: 12px 0;
+}
+
+.facebookFeed .body img {
+	width: 500px;
 }
