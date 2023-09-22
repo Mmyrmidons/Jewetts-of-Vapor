@@ -1,6 +1,7 @@
 #extend("layout"):
     #export("body"):
 		<div class="cheeseHouse">
+			<p>#(hiOzz) :::: #(hiGiggi)</p>
 <!--			<h1>Jewett's Cheese House</h1>-->
 <!--			<h2>A Family Business Since 1970</h2>-->
         
@@ -12,7 +13,7 @@
 <!--				#endfor-->
 <!--			</div>-->
         
-			#extend("partials/facebookFeed")
+			#extend("partials/frazurbluuFeed")
 		</div>
 		<img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
     #endexport

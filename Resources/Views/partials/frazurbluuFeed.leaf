@@ -1,0 +1,51 @@
+<div class="frazurbluuFeed">
+	<div class="filter"><h1>Posts</h1><a href="#"><span>C </span>Filter</a></div>
+
+	#for(post in feed):
+	<div class="post">
+		<div class="header">
+			<a href="#" class="ikon"><img src="/img/feed/feedIkon.jpg"></a>
+			<div class="headerInfo">
+				<a href="#" class="h1">Jewett's Cheese House</a>
+				<div class="headerDetails">
+					<span class="age">2d</span><span> · </span><span>P</span>
+				</div>
+			</div>
+			<a href="#" class="options">...</a>
+		</div>
+				
+		<div class="body">
+			<div class="message">#unsafeHTML(post.message)</div>
+			<div class="hashTags">
+				#for(hashtag in post.hashtags):
+					<a href="#">##(hashtag)</a>
+				#endfor
+			</div>
+			<img src="#(post.imageUrl)"/>
+			<div class="sharing">
+				#if(post.reactions):
+					#if(post.reactions.like):
+						::::<div style="color: yellow;">#(post.reactions.like)</div>
+					#endif
+					#if(post.reactions.love):
+						::::<div style="color: yellow;">#(post.reactions.love)</div>
+					#endif
+					#if(post.reactions.haha):
+						::::<div style="color: yellow;">#(post.reactions.haha)</div>
+					#endif
+					#if(post.reactions.wow):
+						::::<div style="color: yellow;">#(post.reactions.wow)</div>
+					#endif
+					#if(post.reactions.sad):
+						::::<div style="color: yellow;">#(post.reactions.sad)</div>
+					#endif
+					#if(post.reactions.angry):
+						::::<div style="color: yellow;">#(post.reactions.angry)</div>
+					#endif
+				#endif
+			</div>
+		</div>
+	</div>
+	#endfor
+</div>
+ 

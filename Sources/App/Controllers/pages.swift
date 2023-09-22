@@ -1,6 +1,6 @@
 import Vapor
 
-struct Index: Codable {
+struct Index: Encodable {
 	init(_ app: Application) throws {
 		let imgLocation = "/img/various/"
 		let fileURL = URL(fileURLWithPath: app.directory.publicDirectory).appendingPathComponent(imgLocation, isDirectory: true)
@@ -15,24 +15,12 @@ struct Index: Codable {
 		
 		feed = Frazurbluu.feed
 	}
+
 	var pix:Array<String>
-	var feed:[Feed]
-}
-
-enum Reaction: Codable {
-	case like
-	case love
-	case haha
-	case wow
-	case sad
-	case angry
-	case nofuckingshit
-}
-
-struct Feed: Codable {
-	var message:String
-	var hashtags:[String]
-	var imageUrl:String
-	var reactions:[Reaction]
- 	var shares:Int
+	var feed:[Post]
+	
+	var hiGiggi = "Hi Giggi"
+	var hiOzz: String {
+		"Hi Ozz"
+	}
 }

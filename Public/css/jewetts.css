@@ -24,6 +24,11 @@ body * {
 /*	font-family: 'Pangolin';*/
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
 .pix {
 	display: grid;
 }
@@ -71,14 +76,34 @@ body * {
     margin: 24px auto;
 }
 
-.facebookFeed {
+.frazurbluuFeed {
 	float: right;
 	width: 500px;
 	background-color: burlywood;
 	font-family: sans-serif;
 }
 
-.facebookFeed .header {
+.frazurbluuFeed .filter {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: green;
+}
+
+.frazurbluuFeed .filter h1 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.frazurbluuFeed .filter a {
+	display: block;
+	font-size: 15px;
+	background-color: firebrick;
+	height: 36px;
+}
+
+.frazurbluuFeed .header {
 	display: flex;
 	gap: 12px;
 	flex-direction: row;
@@ -87,22 +112,22 @@ body * {
 	width: 100%;
 }
 
-.facebookFeed .header .h1 {
+.frazurbluuFeed .header .h1 {
 	font-size: 15px;
 	font-weight: bold;
 	color: black;
 	text-decoration: none;
 }
 
-.facebookFeed .header .ikon {
+.frazurbluuFeed .header .ikon {
 	flex-basis: auto;
 }
 
-.facebookFeed .header .ikon img {
+.frazurbluuFeed .header .ikon img {
 	display: block;
 }
 
-.facebookFeed .header .headerInfo {
+.frazurbluuFeed .header .headerInfo {
 	flex-basis: 370px;
 	display: flex;
 	flex-direction: column;
@@ -110,7 +135,7 @@ body * {
 	gap: 3px;
 }
 
-.facebookFeed .header .headerDetails {
+.frazurbluuFeed .header .headerDetails {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -119,15 +144,15 @@ body * {
 	font-size: 13px;
 }
 
-.facebookFeed .body .options {
+.frazurbluuFeed .body .options {
 	color: black;
 	text-decoration: none;
 }
 
-.facebookFeed .body .message {
+.frazurbluuFeed .body .message {
 	padding: 12px 0;
 }
 
-.facebookFeed .body img {
+.frazurbluuFeed .body img {
 	width: 500px;
 }
