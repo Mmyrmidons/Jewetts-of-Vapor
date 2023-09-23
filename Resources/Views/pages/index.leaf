@@ -13,8 +13,8 @@
 <!--				#endfor-->
 <!--			</div>-->
         
-			#extend("partials/frazurbluuFeed")
+<!--			#extend("partials/frazurbluuFeed")-->
+			#extend("partials/footer")
 		</div>
-		<img src="/img/MOUSEBAR-STEFANKAHL.gif" width="479" height="23" class="mistrMouse"/>
     #endexport
 #endextend

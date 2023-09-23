@@ -52,12 +52,6 @@ a {
 	height: 100%;
 }
 
-.mistrMouse {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-}
-
 .thePoupster {
     width: 100%;
     height: 100%;
@@ -156,3 +150,15 @@ a {
 .frazurbluuFeed .body img {
 	width: 500px;
 }
+
+.footer {
+	background-color: lightsalmon;
+	width: 100%;
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+}
+
+.footer .mistrMouse {
+}
+

@@ -20,10 +20,6 @@ func routes(_ app: Application) throws {
 	app.get("yevvi") { req async throws -> View in
 		return try await req.view.render(Pages.yevvi)
 	}
-
-	app.get("yevvi") { req async throws -> View in
-		return try await req.view.render(Pages.yevvi)
-	}
 	
 	app.get("spudandal") { req async throws -> View in
 		return try await req.view.render(Pages.spudandal)
