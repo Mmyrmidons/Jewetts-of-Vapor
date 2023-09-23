@@ -12,7 +12,7 @@ let jewetts = (function() {
 	}
 	
 	let initEvents = function() {
-		$(".cheeseHouse p:first").css("backgroundColor", "skyblue")
+		$(".cheeseHouse p:first").css("backgroundColor", "firebrick")
 	}
 	
     return {
