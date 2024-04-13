@@ -7,7 +7,7 @@ enum CheeseError: Error {
 struct Pages {
     static let index = "pages/index"
     static let spudandal = "pages/spudandal"
-    static let yevvi = "pages/yevvi"
+	static let yevvi = "pages/yevvi"
 }
 
 func routes(_ app: Application) throws {
@@ -26,6 +26,7 @@ func routes(_ app: Application) throws {
 	}
 	
 	try whitePages(app)
+	try gnatAttack(app)
 }
 
 func whitePages(_ app: Application) throws {
@@ -80,5 +81,19 @@ func whitePages(_ app: Application) throws {
 	
 	app.get("white", "orderinfo") { req async throws -> View in
 		return try await req.view.render(WhitePages.orderinfo)
+	}
+}
+
+func gnatAttack(_ app: Application) throws {
+	struct GnatPages {
+		static let kansas = "pages/kansas"
+	}
+
+	app.get("kansas") { req async throws -> View in
+		return try await req.view.render(GnatPages.kansas, Kansas(app))
+	}
+	
+	app.get("kansas", "nextSong") { req async throws -> String in
+		return try Kansas(app).bootleg.toJson()
 	}
 }

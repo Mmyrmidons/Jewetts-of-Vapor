@@ -1,21 +1,5 @@
-#extend("layout"):
+#extend("boring"):
 	#export("body"):
-		<script>
-			window.fbAsyncInit = function() {
-				FB.init({
-					appId: '589829313184679',
-					autoLogAppEvents: true,
-					xfbml: true,
-					version: 'v16.0'
-				})
-				
-				$(document).ready(function() {
-					jewetts.initFacebook(FB)
-				})
-			}
-		</script>
-		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
-	
 		<div class="thePoupster"></div>
     #endexport
 #endextend

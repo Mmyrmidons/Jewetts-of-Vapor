@@ -1,5 +1,5 @@
 
-#extend("layout"):
+#extend("boring"):
     #export("body"):
 <div class="grass">
     <img src="/img/kitties/spudandalbert.jpg"/>

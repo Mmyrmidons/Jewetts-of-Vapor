@@ -1,0 +1,54 @@
+#extend("boring"):
+	#export("body"):
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Swash:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Cuneiform&family=Suez+One&display=swap" rel="stylesheet">
+
+	<div class="pointOfKnowReturn">
+	<a href="#"><img src="/kansas/#(bootleg.name)/cover.jpg"/></a>
+	
+	<audio id="bootPlaya" controls autoplay>
+		<source src="/kansas/#(bootleg.name)/#(bootleg.date)/#(bootleg.venue)/#(bootleg.song).mp3" type="audio/mp3">
+	</audio>
+	
+	<div>#(bootleg.songPath)</div>
+	<h1>#(bootleg.song)</h1>
+	<h2>#(bootleg.venue)</h2>
+	<h3>#(bootleg.date)</h4>
+</div>
+
+<script type="text/javascript">
+	function nextSong() {
+		$.getJSON({
+			url: "/kansas/nextSong",
+			success: function(song) {
+				$(".pointOfKnowReturn img").attr("src", "/kansas/" + song.name + "/cover.jpg")
+				$(".pointOfKnowReturn source").attr("src", "/kansas/" + song.name + "/" + song.date + "/" + song.venue + "/" + song.song + ".mp3")
+				
+				$(".pointOfKnowReturn h1").text(song.song)
+				$(".pointOfKnowReturn h2").text(song.venue)
+				$(".pointOfKnowReturn h3").text(song.date)
+				
+				bootPlaya.load()
+			}
+		})
+	}
+
+
+	$( document ).ready(function() {
+		let bootPlaya = document.getElementById("bootPlaya")
+		
+		$(".pointOfKnowReturn a").click(function(e) {
+			nextSong()
+			e.preventDefault()
+		})
+		
+		
+		bootPlaya.addEventListener("ended", function() {
+			nextSong()
+		});
+
+	})
+</script>
+	#endexport
+#endextend

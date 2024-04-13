@@ -27,3 +27,9 @@ struct KeywordsTag: LeafTag {
 		return LeafData.string(salutation! + cat!)
 	}
 }
+
+struct ThisYearTag: LeafTag {
+	func render(_ ctx: LeafContext) throws -> LeafData {
+		return LeafData.int(Calendar.current.component(.year, from: Date()))
+	}
+}

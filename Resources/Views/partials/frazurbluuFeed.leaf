@@ -1,5 +1,8 @@
 <div class="frazurbluuFeed">
-	<div class="filter"><h1>Posts</h1><a href="#"><span>C </span>Filter</a></div>
+	<div class="filters">
+		<h2>Our Recent Facebook Posts</h2>
+		<a href="#"><span>X</span>Filters</a>
+	</div>
 
 	#for(post in feed):
 	<div class="post">
@@ -8,7 +11,7 @@
 			<div class="headerInfo">
 				<a href="#" class="h1">Jewett's Cheese House</a>
 				<div class="headerDetails">
-					<span class="age">2d</span><span> · </span><span>P</span>
+					<span class="age">2d</span><span> · </span><span>X</span>
 				</div>
 			</div>
 			<a href="#" class="options">...</a>
@@ -24,24 +27,29 @@
 			<img src="#(post.imageUrl)"/>
 			<div class="sharing">
 				#if(post.reactions):
+				<div class="reactions">
 					#if(post.reactions.like):
-						::::<div style="color: yellow;">#(post.reactions.like)</div>
+						<a href="#"><img src="/img/feed/reactions/like.svg"/></a>
 					#endif
 					#if(post.reactions.love):
-						::::<div style="color: yellow;">#(post.reactions.love)</div>
+						<a href="#"><img src="/img/feed/reactions/love.svg"/></a>
 					#endif
 					#if(post.reactions.haha):
-						::::<div style="color: yellow;">#(post.reactions.haha)</div>
+						<a href="#"><img src="/img/feed/reactions/haha.svg"/></a>
 					#endif
 					#if(post.reactions.wow):
-						::::<div style="color: yellow;">#(post.reactions.wow)</div>
+						<a href="#"><img src="/img/feed/reactions/wow.svg"/></a>
 					#endif
 					#if(post.reactions.sad):
-						::::<div style="color: yellow;">#(post.reactions.sad)</div>
+						<a href="#"><img src="/img/feed/reactions/sad.svg"/></a>
 					#endif
 					#if(post.reactions.angry):
-						::::<div style="color: yellow;">#(post.reactions.angry)</div>
+						<a href="#"><img src="/img/feed/reactions/angry.svg"/></a>
 					#endif
+					#if(post.reactions.care):
+						<a href="#"><img src="/img/feed/reactions/care.svg"/></a>
+					#endif
+				</div>
 				#endif
 			</div>
 		</div>

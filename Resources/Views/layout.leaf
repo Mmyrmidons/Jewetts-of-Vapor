@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/jewetts.css">
     <body>
-        #import("body")
-    </body>
+		<div class="cheeseHouse clearfix">
+			#import("body")
+			#extend("partials/footer")
+		</div>
+	</body>
 </html>
 

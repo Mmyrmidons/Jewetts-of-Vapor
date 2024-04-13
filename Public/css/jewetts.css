@@ -24,32 +24,33 @@ body * {
 /*	font-family: 'Pangolin';*/
 }
 
+
+:root {
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  font-family: var(--system-ui);
+  background-color: darkolivegreen;
+}
+
 a {
 	color: black;
 	text-decoration: none;
 }
 
-.pix {
-	display: grid;
-}
-
-.pix img {
-	width: 190px;
-}
-
-.pix img:nth-of-type(1) {
-	border: 6px solid orange;
-	align-self: stretch;
-}
-
 .cheeseHouse {
-	background: lemonchiffon;
-	border-left: 3px solid black;
-	border-right: 3px solid black;
+	background: moccasin;
+	border-left: 3px solid lightseagreen;
+	border-right: 3px solid lightseagreen;
+	border-right: 3px solid lightseagreen;
 	margin: 0 auto;
 	width: 1024px;
 	position: relative;
-	height: 100%;
+}
+
+.agedCheddar {
+	width: 100%;
 }
 
 .thePoupster {
@@ -73,28 +74,35 @@ a {
 .frazurbluuFeed {
 	float: right;
 	width: 500px;
-	background-color: burlywood;
-	font-family: sans-serif;
+	font-size: 15px;
+	margin: 12px;
 }
 
-.frazurbluuFeed .filter {
+.frazurbluuFeed .filters {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: green;
+	background-color: lemonchiffon;
+	border-radius: 8px;
+	padding: 0 16px;
 }
 
-.frazurbluuFeed .filter h1 {
+.frazurbluuFeed .filters h2 {
 	font-size: 20px;
 	font-weight: bold;
 }
 
-.frazurbluuFeed .filter a {
-	display: block;
-	font-size: 15px;
-	background-color: firebrick;
-	height: 36px;
+.frazurbluuFeed .filters a {
+	border-radius: 9px;
+	margin: 8px;
+	font-weight: 600;
+	background-color: yellowgreen;
+	padding: 9px;
+}
+
+.frazurbluuFeed .post {
+	margin-top: 16px;
 }
 
 .frazurbluuFeed .header {
@@ -119,6 +127,9 @@ a {
 
 .frazurbluuFeed .header .ikon img {
 	display: block;
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
 }
 
 .frazurbluuFeed .header .headerInfo {
@@ -138,6 +149,10 @@ a {
 	font-size: 13px;
 }
 
+.frazurbluuFeed .body {
+	line-height: 20px;
+}
+
 .frazurbluuFeed .body .options {
 	color: black;
 	text-decoration: none;
@@ -149,14 +164,17 @@ a {
 
 .frazurbluuFeed .body img {
 	width: 500px;
+	margin: 6px 0;
+}
+
+.frazurbluuFeed .sharing .reactions img {
+	height: 18px;
+	width: 18px;
 }
 
 .footer {
 	background-color: lightsalmon;
 	width: 100%;
-	position: absolute;
-	bottom: 40px;
-	left: 0;
 }
 
 .footer .mistrMouse {
