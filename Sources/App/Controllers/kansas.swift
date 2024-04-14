@@ -17,7 +17,6 @@ struct Kansas: Encodable {
 		init() { venue = "Giggi's Haus" }
 		
 		init(_ mp3Url: URL) throws {
-			
 			func bootlegBuilder(_ showFact: inout String) throws {
 				if let last = showInfo.last {
 					showFact = last
@@ -31,7 +30,6 @@ struct Kansas: Encodable {
 			try bootlegBuilder(&venue)
 			try bootlegBuilder(&date)
 			try bootlegBuilder(&name)
-			
 			
 			song = song.replacingOccurrences(of: ".mp3", with: "")
 		}
