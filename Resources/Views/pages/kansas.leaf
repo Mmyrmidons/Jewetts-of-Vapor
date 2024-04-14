@@ -18,10 +18,46 @@
 </div>
 
 <script type="text/javascript">
+	function hiOzzi() {
+		let backgrounds = [
+			 "orange",
+			 "deeppink",
+			 "yellowgreen",
+			 "goldenrod",
+			 "skyblue",
+			 "chartreuse",
+			 "magenta",
+			 "dodgerblue",
+			 "gold",
+			 "firebrick",
+			 "burlywood"
+		]
+
+		let text = [
+			 "black",
+			 "white",
+			 "black",
+			 "black",
+			 "black",
+			 "black",
+			 "white",
+			 "black",
+			 "black",
+			 "white",
+			 "white"
+		]
+
+		  let i = Math.floor(Math.random(backgrounds.length) * 10)
+		  $(".pointOfKnowReturn").css("background-color", backgrounds[i]).css("color", text[i])
+	 }
+	
+	
 	function nextSong() {
 		$.getJSON({
 			url: "/kansas/nextSong",
 			success: function(song) {
+				hiOzzi()
+
 				$(".pointOfKnowReturn img").attr("src", "/kansas/" + song.name + "/cover.jpg")
 				$(".pointOfKnowReturn source").attr("src", "/kansas/" + song.name + "/" + song.date + "/" + song.venue + "/" + song.song + ".mp3")
 				
@@ -37,6 +73,8 @@
 
 	$( document ).ready(function() {
 		let bootPlaya = document.getElementById("bootPlaya")
+		
+		hiOzzi()
 		
 		$(".pointOfKnowReturn a").click(function(e) {
 			nextSong()
